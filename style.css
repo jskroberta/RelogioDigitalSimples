@@ -8,7 +8,7 @@ body {
     
 }
 
-.clock {
+#clock {
     position: relative;
     display: block;
     color: black;
@@ -18,17 +18,17 @@ body {
     text-transform: uppercase;
     font-size: 40px;
 }
-.clock .time {
+#clock #time {
     display: flex;
    
 
 }
-.clock .time div {
+#clock #time div {
     position: relative;
     margin: 0 5px;
 
 }
-.time div span {
+#clock #time div span {
     position: relative;
     display: block;
     color: white;
@@ -38,13 +38,13 @@ body {
     font-size:  90px;
     
 }
-.time div span :nth-child(2) {
-    height: 30px;
+#clock #time div span :nth-child(2) {
+    /*height: 30px;
     font-size: 0.7em;
     letter-spacing: 0.2em;
     font-weight: 500;
     z-index: 9;
     box-shadow: none;
     background: #333333;
-    text-transform: uppercase;
+    text-transform: uppercase;*/
 }
