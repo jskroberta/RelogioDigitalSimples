@@ -4,54 +4,79 @@
 body {
     display: flex;
     justify-content: space-around;
-    min-width: 100vh;
     font-family: 'Open Sans', sans-serif;
     background-image: url(relogioPonteiro.JPG);
     background-repeat: no-repeat;
-    background-size: 100%; 
-    
-    
+    background-color: #c6b490;
+    background-position: initial;
+    background-size: 150%;
+    background-blend-mode: darken;
+    margin: 0;
+
+}
+@media only screen and (max-width: 900px) {
+    body {
+        background-image: url(relogioPonteiro-modificado.JPG);
+        background-size: 150%;
+        background-position: top;
+    }
 }
 
-#clock {
-    position: relative;
-    display: block;
+.clock {
+    display: flex;
     color: black;
-    text-align: center; 
-    margin: 10px 0;
+    text-align: center;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 40px;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    flex-wrap: wrap;
+    align-items: center;
     
 }
-#clock #time {
+.clock-time {
     display: flex;
-    /*align-items: center;*/
 
 }
-#clock #time div {
-    position: relative;
-    margin: 0 5px;
-
+.clock-time-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    padding: 10px;
+    flex-direction: column;
 }
-#clock #time div span {
-    position: relative;
-    display: block;
+.time-container-footer{
+    width: 100%;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    box-shadow: none;
+    height: 50px;
+    background: #696464;
+    text-transform: uppercase;
+    text-decoration-line: overline;
+}
+.time-container-text{
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
     color: white;
-    width: 400px;
-    height: 450px;
+    width: 200px;
+    height: 250px;
+    justify-content: center;
     background: black;
     font-size:  90px;
+}
+#clock #time div span {
+
     
 }
 #clock #time div .aaaa {
     display: block;
     height: 50px;
-    font-size: 0.7em;
-    letter-spacing: 0.2em;
-    font-weight: 500;
-    box-shadow: none;
-    background: #696464;
-    text-transform: uppercase;
-    text-decoration-line: overline;
+
 }
