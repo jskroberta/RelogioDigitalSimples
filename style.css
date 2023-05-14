@@ -10,7 +10,7 @@ body {
     background-color: #c6b490;
     background-position: initial;
     background-size: 150%;
-    background-blend-mode: darken;
+    background-blend-mode: multiply;
     margin: 0;
 
 }

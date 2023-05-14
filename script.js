@@ -1,9 +1,6 @@
 function preencher_zero(valor){
-    if(valor === undefined){
-        return "00";
-    }
     if(valor<10){
-        return `0${valor}`
+        return "0"+valor;
     }
     return valor;
 }
